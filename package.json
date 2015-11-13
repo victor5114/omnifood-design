@@ -1,0 +1,62 @@
+{
+  "name": "OmniApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify --entry ./resources/js/app/app.js --outfile ./resources/dist/app.js",
+    "install": "napa"
+  },
+  "napa": {
+    "angular": "angular/bower-angular",
+    "angular-route": "angular/bower-angular-route",
+    "angular-resource": "angular/bower-angular-resource"
+  },
+  "author": "Victor Pongnian",
+  "license": "ISC",
+  "browser": {
+    "restangular": "./node_modules/restangular/dist/restangular.js",
+    "lodash": "./resources/vendors/js/lodash.js"
+  },
+  "browserify-shim": {
+    "angular": {
+      "exports": "angular"
+    },
+    "angular-route": {
+      "exports": "angular.module('ngRoute').name"
+    },
+    "lodash": {
+      "exports": "_"
+    },
+    "restangular": {
+      "depends": [
+        "angular",
+        "lodash"
+      ]
+    }
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "devDependencies": {
+    "browser-sync": "^2.9.12",
+    "browserify": "^12.0.1",
+    "browserify-shim": "^3.8.11",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-ruby-sass": "^2.0.5"
+  },
+  "dependencies": {
+    "angular-node-fs": "0.0.1",
+    "connect": "^3.4.0",
+    "consolidate": "^0.13.1",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "node-static": "^0.7.7",
+    "restangular": "^1.5.1"
+  }
+}
