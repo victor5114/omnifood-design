@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="OmniApp">
+
+   <head>
+      <meta charset="utf-8">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+    <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,300italic' rel='stylesheet' type='text/css'>
+    
+    <!-- load angular via CDN-->
+<!--
+       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+       <script src="https://code.angularjs.org/1.4.5/angular-messages.min.js"></script>
+       <script src="https://code.angularjs.org/1.4.7/angular-resource.min.js"></script>
+-->
+       <title>Omnifood</title>
+       <base href="/">
+   </head>
+    <body>
+       <header>
+          <nav>
+              <div class="row">
+                  <img src="../images/logo-white.png" alt="Omnifood Logo" class="logo">
+                  <ul class="main-nav">
+                      <li><a href="">Food Delivery</a></li>
+                      <li><a href="">How it works</a></li>
+                      <li><a href="">our cities</a></li>
+                      <li><a href="">Sign up</a></li>
+                  </ul>
+              </div>
+          </nav>
+           <div class="hero-text-box">
+               <h1>Good Bye Junk Food. <br> Hello super Healthy meals.</h1>
+                <a class="btn btn-full" href="">I'm Hungry</a>
+                <a class= "btn btn-ghost" href="">Show me more</a>
+                <a href="/"><i>Test</i></a>
+                <a href="/test2"><i>Test2</i></a>
+                <a href="/test3/5"><i>Test3</i></a>
+           </div>
+       </header>
+       
+<!--
+       <div ng-controller="mainController">
+           <div>
+               <label>What is your twitter handle ?</label>
+               <input type="text" ng-model="handle" />
+           </div>
+           
+           <div class="alert" ng-class="{'alert-warning': handle.length < characters, 'alert-danger': handle.length > 5}" ng-show="handle.length !== characters">
+               <div ng-show="handle.length < characters">
+                   You have less than 5 characters
+               </div>
+               <div ng-show="handle.length > characters">
+                   You have more than 5 characters
+               </div>
+           </div>
+           
+           <hr/>
+           <h2>twitter.com/{{ lowercaseHandle() }}</h2>
+           <input type="button" value="click me !" ng-click="alertClick()">
+           <div ng-cloak>{{ name }}</div>
+           <ul>
+               <li ng-repeat="rule in rules">
+                   {{ rule.RuleName }}
+               </li>
+           </ul>
+           
+       </div>
+-->
+         <section class="section-features">
+            <div class="row">
+                 <h2>Get food fast &mdash; not fast food</h2>
+                 <p class="long-copy">
+                     Hello we're Omnifood, your new premium food delivery service. We know you're always busy. No time for coolking, So let us take care of that, we're realy good, we promise!
+                 </p>
+             </div>
+             <div class="row">
+                 <div class="col span-1-of-4 box">
+                    <i class="ion-ios-infinite-outline icon-big"></i>
+                     <h3>Up to 365 days/years</h3>
+                     <p>
+                         Never cook again !!!! Our susbxcriotun poaknes include up to 365 days/year covergae. You can also choose to do shit 
+                     </p>
+                 </div>
+                 <div class="col span-1-of-4 box">
+                    <i class="ion-ios-stopwatch-outline icon-big"></i>
+                     <h3>Up to 365 days/years</h3>
+                     <p>
+                         Never cook again !!!! Our susbxcriotun poaknes include up to 365 days/year covergae. You can also choose to do shit 
+                     </p>
+                 </div>
+                 <div class="col span-1-of-4 box">
+                    <i class="ion-ios-nutrition-outline icon-big"></i>
+                     <h3>Do shit</h3>
+                     <p>
+                         Never cook again !!!! Our susbxcriotun poaknes include up to 365 days/year covergae. You can also choose to do shit 
+                     </p>
+                 </div>
+                 <div class="col span-1-of-4 box">
+                    <i class="ion-ios-cart-outline icon-big"></i>
+                     <h3>Order anything</h3>
+                     <p>
+                         Never cook again !!!! Our susbxcriotun poaknes include up to 365 days/year covergae. You can also choose to do shit 
+                     </p>
+                 </div>
+             </div>
+         </section>
+
+         <section class="section-meals">
+             <ul class="meals-showcase clearfix">
+                 <li>
+                     <figure class="meal-photo">
+                         <img src="../images/1.jpg" alt="Korean bibimbap with egg vegetables">
+                     </figure>
+                 </li>
+                 <li>
+                     <figure class="meal-photo">
+                         <img src="../images/2.jpg" alt="Simple italian pizza with cherry tomatoes">
+                     </figure>
+                 </li>
+                 <li>
+                     <figure class="meal-photo">
+                         <img src="../images/3.jpg" alt="Chicken breast steak with vegetables">
+                     </figure>
+                 </li>
+                 <li>
+                     <figure class="meal-photo">
+                         <img src="../images/4.jpg" alt="Autumn pumpkin sauce">
+                     </figure>
+                 </li>
+             </ul>
+             <ul class="meals-showcase clearfix">
+                 <li>
+                     <figure class="meal-photo">
+                         <img src="../images/5.jpg" alt="Paleo beef steak">
+                     </figure>
+                 </li>
+                 <li>
+                     <figure class="meal-photo">
+                         <img src="../images/6.jpg" alt="Healthy baguette with egg AND VEGETABLES">
+                     </figure>
+                 </li>
+                 <li>
+                     <figure class="meal-photo">
+                         <img src="../images/7.jpg" alt="Chicken breast steak with vegetables">
+                     </figure>
+                 </li>
+                 <li>
+                     <figure class="meal-photo">
+                         <img src="../images/8.jpg" alt="Autumn pumpkin sauce">
+                     </figure>
+                 </li>
+             </ul>
+         </section>
+         <section class="section-steps">
+             <div class="row">
+                 <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+             </div>
+             <div class="row">
+                 <div class="col span-1-of-2 steps-box">
+                     <img src="../images/app-iPhone.png" alt="Omnifood app on Iphone" class="app-screen">
+                 </div>
+                 <div class="col span-1-of-2 steps-box">
+                     <div class="works-step">
+                         <div class="steps-nbr">1</div>
+                         <p>Choose the subscription pkan that fits your needs and sign up for today and get reward for it</p>
+                     </div>
+                     <div class="works-step">
+                         <div class="steps-nbr">2</div>
+                         <p>Order your delicious meal using our modile app or website. Or you can even call us</p>
+                     </div>
+                     <div class="works-step">
+                         <div class="steps-nbr">3</div>
+                         <p>Enjoy your meal after less than 30 seconds. See you the next time.</p>
+                     </div>
+                     <a href="" class="button-app"><img src="../images/download-app.svg" alt="App Store Button"></a>
+                     <a href="" class="button-app"><img src="../images/download-app-android.png" alt="Play Store Button"></a>
+                 </div>
+             </div>
+         </section>
+         <section class="section-cities">
+             <div class="row">
+                 <h2>We're currently in thses cities</h2>
+             </div>
+             <div class="row">
+                 <div class="col span-1-of-4 box">
+                   <img src="../images/lisbon-3.jpg" alt="Lisbon">
+                   <h3>Lisbon</h3>
+                   <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        <span>1600+ happy eaters</span>
+                   </div>
+                   <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        <span>60+ Top chef</span>
+                   </div>
+                   <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                       <a href=""><span>@omnifood_lx</span></a>
+                   </div>
+
+                 </div>
+                 <div class="col span-1-of-4 box">
+                    <img src="../images/san-francisco.jpg" alt="San Francisco">
+                   <h3>San Francisco</h3>
+                   <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        1600+ happy eaters
+                   </div>
+                   <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        60+ Top chef        
+                   </div>
+                   <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href=""><span>@omnifood_sf</span></a>
+                   </div>
+                 </div>
+                 <div class="col span-1-of-4 box">
+                    <img src="../images/berlin.jpg" alt="Berlin">
+                   <h3>Berlin</h3>
+                   <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        2300+ happy eaters
+                   </div>
+                   <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        110+ Top chef
+                   </div>
+                   <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href=""><span>@omnifood_bl</span></a>
+                   </div>
+                 </div>
+                 <div class="col span-1-of-4 box">
+                    <img src="../images/london.jpg" alt="London">
+                   <h3>London</h3>
+                   <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        1200+ happy eaters
+                   </div>
+                   <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        120+ Top chef
+                   </div>
+                   <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href=""><span>@omnifood_ld</span></a>
+                   </div>
+                 </div>
+             </div>
+         </section>
+         <section class="section-testimonials">
+            <div class="row">
+                <h2>Our customers can't live withtou us</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Omnifood is just awseome! I just launched a startup which leaves me with no time for cooking, so Omnifod is a life-saver. Now that I get to it, I couldn't live without my daily meals.
+                    </blockquote>
+                    <cite><img src="../images/customer-1.jpg" alt="">Alberto Duncan</cite>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Omnifood is just awseome! I just launched a startup which leaves me with no time for cooking, so Omnifod is a life-saver. Now that I get to it, I couldn't live without my daily meals.
+                    </blockquote>
+                    <cite><img src="../images/customer-2.jpg" alt="">Joana Silva</cite>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Omnifood is just awseome! I just launched a startup which leaves me with no time for cooking, so Omnifod is a life-saver. Now that I get to it, I couldn't live without my daily meals.
+                    </blockquote>
+                    <cite><img src="../images/customer-3.jpg" alt="">Milton Chapman</cite>
+                </div>
+            </div>
+
+         </section>
+         <section class="section-plans">
+            <div class="row">
+                <h2>Start eating healthy today</h2>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <div class="plan-box">
+                            <div>
+                                <h3>Premium</h3>
+                                <p class="plan-price">$399 <span>/ month</span></p>
+                                <p class="plan-price-meal">That's only 13.30$ per meal</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><i class="ion-ios-checkmark-empty icon-small"></i> 1 meal </li>
+                                    <li><i class="ion-ios-checkmark-empty icon-small"></i>  Order from 8 am to 12 pm </li>
+                                    <li><i class="ion-ios-checkmark-empty icon-small"></i> Access to newest creations</li>
+                                    <li><i class="ion-ios-checkmark-empty icon-small"></i>  Free delivery</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="" class="btn btn-ghost">Sign up now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <div class="plan-box">
+                            <div>
+                                <h3>Pro</h3>
+                                <p class="plan-price">$199 <span>/ month</span></p>
+                                <p class="plan-price-meal">That's only 14.90$ per meal</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><i class="ion-ios-checkmark-empty icon-small"></i> 1 meal </li>
+                                    <li><i class="ion-ios-checkmark-empty icon-small"></i>  Order from 8 am to 12 pm </li>
+                                    <li><i class="ion-ios-close-empty icon-small"></i> Access to newest creations</li>
+                                    <li><i class="ion-ios-checkmark-empty icon-small"></i>  Free delivery</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="" class="btn btn-ghost">Sign up now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <div class="plan-box">
+                            <div>
+                                <h3>Starter</h3>
+                                <p class="plan-price">$19<span>/ month</span></p>
+                                <p class="plan-price-meal">&nbsp;</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><i class="ion-ios-checkmark-empty icon-small"></i> 1 meal </li>
+                                    <li><i class="ion-ios-checkmark-empty icon-small"></i>  Order from 8 am to 12 pm </li>
+                                    <li><i class="ion-ios-close-empty icon-small"></i> Access to newest creations</li>
+                                    <li><i class="ion-ios-checkmark-empty icon-small"></i>  Free delivery</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="" class="btn btn-ghost">Sign up now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section class="section-form">
+            <div class="row">
+                <h2>We'e happy to hear form you</h2>
+            </div>
+             <div class="row">
+                 <form method="post" action="#" contact-form>
+                     <div class="row">
+                         <div class="col span-1-of-3">
+                             <label>Name</label>
+                         </div>
+                         <div class="col span-2-of-3">
+                             <input type="text" name="name" id="name" placeholder="Your name" required>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col span-1-of-3">
+                             <label>Email</label>
+                         </div>
+                         <div class="col span-2-of-3">
+                             <input type="email" name="email" id="email" placeholder="Your email" required>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col span-1-of-3">
+                             <label>Email</label>
+                         </div>
+                         <div class="col span-2-of-3">
+                             <select name="find-us" id="find-us">
+                                 <option value="friends">Friends</option>
+                                 <option value="search" selected>Search Engine</option>
+                                 <option value="ad">Advertisement</option>
+                                 <option value="other">Other</option>
+                             </select>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col span-1-of-3">
+                             <label>Email</label>
+                         </div>
+                         <div class="col span-2-of-3">
+                             <input type="email" name="email" id="email" placeholder="Your email" required>
+                         </div>
+                     </div>
+                 </form>
+             </div>
+         </section>
+ 
+        <div class="container">
+          <div ng-view></div>
+        </div>
+   
+       <script src="../dist/js/app.js" ></script>
+    </body>
+</html>

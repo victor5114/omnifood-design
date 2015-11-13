@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<p> You are on Page 1 </p>
+<a ng-href="/">Page 1</a>
+<a ng-href="/test2">Page 2</a>
+<a ng-href="/test3/3">Page 3</a>
+<label>Search</label>
+<input type="text" value="Doe">
+
+
+<h3>Search Results</h3>
+<div class="list-group">
+    <search-result person-object="person" formatted-address-function="formattedAddress(aperson)" ng-repeat="person in people">
+        
+    </search-result>
+</div>

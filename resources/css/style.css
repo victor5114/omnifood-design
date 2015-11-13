@@ -1,0 +1,490 @@
+/* ------------------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------------------ */
+/* line 5, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* line 11, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+html {
+  background-color: #fff;
+  color: #989898;
+  font-family: 'Lato', 'Arial', 'sans-serif';
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility; }
+
+/* line 20, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.clearfix {
+  zoom: 1; }
+
+/* line 21, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+/* ------------------------------------------ */
+/* HEADERS */
+/* ------------------------------------------ */
+/* line 33, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+h1, h2, h3 {
+  font-weight: 300;
+  text-transform: uppercase; }
+
+/* line 38, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+h1 {
+  font-size: 240%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  word-spacing: 4PX;
+  letter-spacing: 1px; }
+
+/* line 47, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+h2 {
+  font-size: 180%;
+  margin-bottom: 30px;
+  text-align: center;
+  word-spacing: 2px;
+  letter-spacing: 1px; }
+
+/* line 55, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  letter-spacing: 1px; }
+
+/* line 66, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px; }
+
+/* ------------------------------------------ */
+/* ----- PARAGRAPH -------*/
+/* ------------------------------------------ */
+/* line 75, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.long-copy {
+  line-height: 205%;
+  width: 70%;
+  margin-left: 15%; }
+
+/* line 81, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.box p {
+  font-size: 90%;
+  line-height: 145%; }
+
+/* line 86, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+header {
+  background-image: linear-gradient(rgba(23, 23, 23, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed; }
+
+/* line 94, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* line 102, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.logo {
+  height: 100px;
+  width: auto;
+  float: left; }
+
+/* line 108, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 50px; }
+  /* line 112, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+  .main-nav li {
+    display: inline-block;
+    margin-left: 40px; }
+  /* line 118, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s; }
+  /* line 128, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+  .main-nav li a:hover,
+  .main-nav li a:active {
+    border-bottom: 2px solid #e67e22; }
+
+/* ------------------------------------------ */
+/* ICONS */
+/* ------------------------------------------ */
+/* line 137, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px; }
+
+/* line 144, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 120%;
+  margin-right: 10px;
+  /* secret to align text and icon*/
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -4px; }
+
+/* ------------------------------------------ */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------ */
+/* line 163, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.box {
+  padding: 1%; }
+
+/* line 167, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.row {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+/* line 172, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+section {
+  padding: 80px 0; }
+
+/* ------------------------------------------ */
+/* -------- BUTTONS -------*/
+/* ------------------------------------------ */
+/* line 181, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weigt: 300;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s; }
+
+/* line 191, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px; }
+
+/* line 199, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22; }
+
+/* line 206, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.btn:hover,
+.btn:active {
+  background-color: #cf6d17;
+  border: 1px solid #cf6d17; }
+
+/* line 217, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #cf6d17;
+  color: #fff; }
+
+/* ------------------------------------------ */
+/* FEATURES */
+/* ------------------------------------------ */
+/* line 227, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.section-features .long-copy {
+  margin-bottom: 30px; }
+
+/* ------------------------------------------ */
+/* MEALS */
+/* ------------------------------------------ */
+/* line 235, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.section-meals {
+  padding: 0; }
+
+/* line 239, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.meals-showcase {
+  list-style: none;
+  width: 100%; }
+
+/* line 244, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%; }
+
+/* line 250, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: black; }
+
+/* line 257, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s; }
+
+/* line 265, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.meal-photo img:hover {
+  transform: scale(1.03);
+  opacity: 1; }
+
+/* ------------------------------------------ */
+/* LINKS */
+/* ------------------------------------------ */
+/* line 274, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s, color 0.2s; }
+
+/* line 283, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent; }
+
+/* ------------------------------------------ */
+/* HOW IT WORKS */
+/* ------------------------------------------ */
+/* line 292, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.section-steps {
+  background-color: #f4f4f4; }
+
+/* line 295, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.steps-box {
+  margin-top: 30px; }
+
+/* line 299, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%; }
+
+/* line 304, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.steps-box:last-child {
+  padding-left: 3%; }
+
+/* line 308, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.app-screen {
+  width: 40%; }
+
+/* line 312, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.works-step {
+  margin-bottom: 50px; }
+
+/* line 316, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.works-step:last-of-type {
+  margin-bottom: 80px; }
+
+/* line 320, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.works-step .steps-nbr {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px; }
+
+/* line 334, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.city-feature {
+  margin-bottom: 5px; }
+
+/* line 339, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.button-app:link,
+.button-app:visited {
+  border: 0; }
+
+/* line 343, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.button-app img {
+  height: 50px;
+  margin-right: 10px;
+  width: auto; }
+
+/* ------------------------------------------ */
+/* CITIES */
+/* ------------------------------------------ */
+/* line 352, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px; }
+
+/* ------------------------------------------ */
+/* TESTIMONIALS */
+/* ------------------------------------------ */
+/* line 361, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed; }
+
+/* line 368, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px; }
+
+/* line 376, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+blockquote:before {
+  content: "\201C";
+  font-size: 400%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -3px; }
+
+/* line 385, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+cite {
+  font-size: 90%;
+  margin-top: 25px; }
+
+/* line 390, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: block;
+  vertical-align: middle; }
+
+/* ------------------------------------------ */
+/* SIGN UP */
+/* ------------------------------------------ */
+/* line 401, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.section-plans {
+  background-color: #f4f4f4; }
+
+/* line 405, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #e8e8e8; }
+
+/* line 413, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.plan-box ul {
+  list-style: none; }
+
+/* line 417, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e2e2; }
+
+/* line 422, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #e67e22; }
+
+/* line 429, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300; }
+
+/* line 434, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.plan-price-meal {
+  font-size: 80%; }
+
+/* line 438, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.plan-box ul li {
+  padding: 5px 0; }
+
+/* line 442, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.plan-box div:first-child {
+  background-color: #fcfcfc;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; }
+
+/* line 449, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.plan-box div:last-child {
+  text-align: center; }
+
+/* ------------------------------------------ */
+/* SPINNERS */
+/* ------------------------------------------ */
+/* line 458, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px; }
+
+/* line 466, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out; }
+
+/* line 476, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s; }
+
+/* line 481, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s; }
+
+/* line 486, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s; }
+
+/* line 491, /Users/victorP/Documents/Sites/Omnifood/Omnifood/resources/css/style.scss */
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s; }
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    -webkit-transform: scaleY(0.4); }
+  20% {
+    -webkit-transform: scaleY(1); } }
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4); }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1); } }
+
+/*# sourceMappingURL=style.css.map */

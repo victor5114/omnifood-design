@@ -1,0 +1,25 @@
+<p>
+    <a href="/test2">Back to search</a>
+</p>
+
+<h3>Forecart for {{city}}</h3>
+
+<hr />
+Days: <a href="/forecast/2" ng-class="{'bg-primary' : days === '2' }">2</a> | <a href="/forecast/5" ng-class="{'bg-primary' : days === '5' }">5</a> | <a href="/forecast/7" ng-class="{'bg-primary' : days === '7' }">7</a>
+
+<div   ng-class="{'spinner': forecast_wait === true}">
+  <div class="rect1"></div>
+  <div class="rect2"></div>
+  <div class="rect3"></div>
+  <div class="rect4"></div>
+  <div class="rect5"></div>
+</div>
+
+<div ng-repeat="w in weatherResult.list">
+    <div class="row">
+        <div class="col-md-12">
+            <forecast-result forecast-elem="w" convert-to-standard="convertToFahrenheit(daytime)" convert-to-date="convertToDate(date)" date-format="MMM d, y"></forecast-result>
+        </div>
+    </div>
+</div>
+

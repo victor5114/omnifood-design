@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+<p>You are on page 2</p>
+<a ng-href="/">Page 1 </a>
+<a ng-href="/test2">Page 2</a>
+<a ng-href="/test3/3">Page 3</a>
+
+
+<div class="row forecast-container">
+   <div class="col-md-6 col-md-offset-3">
+       <h4>Forecast by City</h4>
+       <form ng-submit="submit()">
+            <div class="form-group">
+               <input type="text" ng-model="city" class="form-control"/>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Get forecast" />
+       </form>
+   </div>
+</div>
